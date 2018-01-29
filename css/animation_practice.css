@@ -1,0 +1,78 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/milky-way.jpg);
+}
+
+#grid_container {
+	width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Rammetto One', cursive;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+	color: grey;
+}
+
+@keyframes l_move {
+	0% {left: 0px; bottom: 0px;}
+	25% {left: 0px; bottom: 40px; }
+	50% { left: 175px; bottom: 0px; }
+	100% { left: 0px; bottom: -200px; color: #1f2161;}
+	
+
+}
+
+#l {
+position: relative;
+animation: l_move 3s infinite;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+
+
+@keyframes o_move {
+	0% {left: 0px; bottom: 0px;}
+	25% {left: 0px; bottom: 40px; }
+	50% { left: -50px; bottom: 0px;}
+	100% { left: 0px; bottom: -200px; color: #1f2161;}
+
+	
+
+}
+
+#o {
+position: relative;
+animation: o_move 3s infinite;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+
+@keyframes w_move {
+	0% {left: 0px; bottom: 0px;}
+	25% { left: 0px; bottom: 40px; }
+	50% { left: -50px; bottom: 0px; }
+	100% { left: 0px; bottom: -200px; color: #1f2161;}
+	
+
+}
+
+#w {
+position: relative;
+animation: w_move 3s infinite;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+
+	
+
